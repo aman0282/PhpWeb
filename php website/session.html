@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LearnToCode</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<HEADER>
+       
+        </HEADER>
+        <div class="sidenav">
+            <h2>PHP</h2>
+            <a href="intro.html">Introduction to Php</a>
+            <a href="basics.html">Php Basics</a>
+            <a href="control.html">Control Structure</a>
+            <a href="functions.html">Functions</a>
+            <a href="Array.html">Arrays</a>
+            <a href="forms.html">Forms</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="session.html">Sessions</a>
+            <a href="string.html">Strings Handling</a>
+            <a href="file.html">File System</a>
+            <a href="database.html">PHP with Databases</a>
+          </div>
+          <h1>Sessions in PHP</h1>
+          <p>Sessions in PHP are a way to store and manage user data across multiple pages during a user's visit to a website. Sessions are crucial for maintaining user-specific information, such as login status, shopping cart contents, and user preferences.</p>
+          <h3>Importance of Sessions</h3>
+          <p>Sessions are crucial for various web applications. They enable:</p>
+          <p><b>User Authentication:</b>Keeping users logged in during their visit.</p>
+          <p><b>Shopping Carts:</b>Storing items in a cart while shopping online</p>
+          <p><b>Personalization: </b> Remembering user preferences and settings.</p>
+          <p><b>Security:</b>Storing sensitive data securely on the server.</p>
+          <h1>Creating a Session</h1>
+          <p>In PHP, you can create a session using the <b>session_start() </b> Once started, you can store and retrieve data in the session array<b> $_SESSION.</b></p>
+          <img src="C:\Users\saini\OneDrive\Desktop\php website\Screenshot 2024-10-27 172833.png" class="right">
+          <h3>Output:</h3>
+          <p>if session is not set then,</p>
+          <img src="C:\Users\saini\OneDrive\Desktop\php website\Screenshot 2024-10-27 172854.png" class="left">
+          <p>if session is set then,</p>
+          <img src="C:\Users\saini\OneDrive\Desktop\php website\Screenshot 2024-10-27 172912.png" class="left">
+          <h1>Starting Sessions</h1>
+          <p>To start a session in PHP, you use the session_start() function. This function must be called before any output is sent to the browser.</p>
+          <img src="C:\Users\saini\OneDrive\Desktop\php website\Screenshot 2024-10-27 173148.png" class="right">
+          <h1>Destroying a Session</h1>
+          <p>Sessions can be destroyed using <b>session_destroy() </b> or <b>session_unset()</b> functions to log out a user or reset session data.</p>
+          <img src="C:\Users\saini\OneDrive\Desktop\php website\Screenshot 2024-10-27 173200.png" class="right">
+          <h1>Passing Session IDs</h1>
+          <p>Session IDs are typically passed between pages using cookies or URL parameters. By default, PHP uses cookies to manage session IDs, but you can also configure it to use URL parameters.</p>
+          <img src="C:\Users\saini\OneDrive\Desktop\php website\Screenshot 2024-10-27 173214.png" class="right">
+<h1>Encoding and Decoding Sessions</h1>
+<p>Sessions are serialized and encoded before being stored and decoded when accessed. You can use custom session handlers to control how sessions are stored and managed.</p>
+<img src="C:\Users\saini\OneDrive\Desktop\php website\Screenshot 2024-10-27 173225.png" class="right">
+<h1>Working with Sessions Without Cookies</h1>
+<p>While cookies are the default method for managing sessions, you can configure PHP to work without cookies using URL rewriting or other techniques.</p>
+<img src="C:\Users\saini\OneDrive\Desktop\php website\Screenshot 2024-10-27 173238.png" class="right">
+<h1>Using Sessions for User Authentication</h1>
+<p>Sessions are commonly used for user authentication. When a user logs in, you can store their user ID or other identifying information in a session variable.</p>
+<img src="C:\Users\saini\OneDrive\Desktop\php website\Screenshot 2024-10-27 173253.png" class="right">
+<h1>Session Security</h1>
+<p>Ensuring the security of sessions is essential to prevent unauthorized access or tampering with user data. PHP provides built-in session security features, but it's also important to follow best practices, such as regenerating session IDs after a user logs in.</p>
+<img src="C:\Users\saini\OneDrive\Desktop\php website\Screenshot 2024-10-27 173310.png" class="right">
